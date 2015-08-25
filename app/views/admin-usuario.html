@@ -1,0 +1,162 @@
+{% extends "masterpage.html" %}
+{% block content %}  
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                          <i class="glyphicon glyphicon-user"></i> |
+                            Panel de usuario
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <a href="#" data-toggle="modal" data-target="#myModal" class="hide"></a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-info-circle"></i> Actualiza tus datos
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                  <form role="form">
+                    <div class="col-lg-5 col-lg-push-1">
+                        <div class="form-group">
+                            <label for="InputName">Nombre del usuario</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="InputName" id="InputName" value="{{ nombreLogged }}" disabled>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputEmail">Correo electronico</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="InputEmailFirst" name="InputEmail" value="{{ mailLogged }}" disabled>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                            </div>
+                        </div>
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">
+                                    <i class="glyphicon glyphicon-lock"></i>|
+                                    Cambiar contraseña    
+                                </h1>
+                            </div><!--panle-head-->
+                            <div class="panel-body">
+                               <div class="form-group">
+                                  <label for="InputEmail">Contraseña actual</label>
+                                  <div class="input-group">
+                                      <input type="password" class="form-control" id="pass" name="pass" required>
+                                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                      </div>
+                               </div>
+                               <div class="form-group">
+                                  <label for="InputEmail">Nueva contraseña</label>
+                                  <div class="input-group">
+                                      <input type="password" class="form-control" id="pass1" name="pass1" required>
+                                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                      </div>
+                               </div>
+                               <div class="form-group">
+                                  <label for="InputEmail">Confirmar contraseña</label>
+                                  <div class="input-group">
+                                      <input type="password" class="form-control" id="pass2" name="pass2" required>
+                                      <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                                      </div>
+                               </div>
+                            </div><!--panel-body-->
+                        </div>    
+                        <input type="submit" name="submit" id="submit" value="Guardar" onclick="validar();" class="btn btn-info pull-right">
+                    </div>
+                    <div class="col-lg-4 col-lg-push-2">                                            
+                      <div class="form-group">
+                            <label>Información del proyecto</label>                           
+                      </div>
+                      <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">
+                                    <i class="glyphicon glyphicon-cog"></i>|
+                                    Cambiar proyecto    
+                                </h1>
+                            </div><!--panle-head-->
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <label for="InputName">Proyecto actual</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="InputName" id="InputName" value="{{ proyectLogged }}" disabled>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-cog"></span></span>
+                                    </div>
+                                </div>
+                               <form class="form-group">
+                                  <label for="InputName">Cambiar proyecto</label>
+                                  <div class="input-group">
+                                      <select name="nuevoProyecto" class="selectpicker selectcenter bs-select-hidden">
+                                        <option value="**">Otro Proyecto</option>
+                                        <option value="**">Otro Proyecto mas</option>
+                                      </select>                           
+                                  </div>                          
+                              </form>                              
+                            </div><!--panel-body-->
+                        </div>    
+                      <div class="form-group">
+                        <input type="submit" name="cambiarGrupo" id="cambiarGrupo" value="Cambiar" class="btn btn-info pull-right">
+                      </div>
+                    </div>
+                </form>
+                </div><!--row-->
+                <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 class="modal-title">Asistencia del taller</h2>
+                        </div>
+                        <div class="modal-body">
+                          <h3 class="modal-text">Estudiantes que asistieron al taller 1 del grupo 1</h3><br/>
+                          <table  class="footable1" id="table2" data-filter="#filter" data-filter-text-only="true">
+                            <thead>
+                                    <tr>
+                                      <!--<th data-sort-ignore="true" class="borrar"><i class="glyphicon glyphicon-check"><i/></th>-->
+                                      <th>Nombre <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th data-sort-ignore="true">Sede educativa</th>
+                                      <th data-sort-ignore="true">Grado</th>
+                                      <th data-sort-ignore="true">Comuna</th>
+                                      <th data-sort-ignore="true">Edad</th>
+                                      <th data-sort-ignore="true">Tipo de documento</th>
+                                      <th data-sort-ignore="true"># de documento</th>
+                                    </tr>
+                            </thead>
+                            <tbody class="tbody-final">
+                            
+                            </tbody>
+                            <tfoot>
+                                    <tr>
+                                        <td colspan="8">
+                                            <div class="pagination pagination-centered hide-if-no-paging"></div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Regresar</button>
+                          <button type="button" class="btn btn-default" onclick="aceptar();">Aceptar</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+{% endblock %}

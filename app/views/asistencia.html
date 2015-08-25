@@ -1,0 +1,126 @@
+{% extends "masterpage.html" %}
+{% block content %}   
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">                            
+                                {{ sedeEdu }} - Taller {{ numEvento }}
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <a href="#" data-toggle="modal" data-target="#myModal" class="hide"></a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-info-circle"></i> Selecciona los estudiantes que asistieron
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-10 col-lg-push-1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">
+                                    <i class="glyphicon glyphicon-list"></i>
+                                    Estudiantes    
+                                </h1>
+                            </div><!--panle-head-->
+                            <div class="panel-body">
+                                <p><i class="glyphicon glyphicon-search"></i> <input id="filter" type="text"></p>
+                                <table class="footable" data-filter="#filter" data-filter-text-only="true">
+                                  <thead>
+                                    <tr>
+                                      <th data-sort-ignore="true"><i class="glyphicon glyphicon-check"><i/></th>                                              
+                                      <th class="footable-sortable" data-sort-initial="true">Nombre <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  class="footable-sortable" data-sort-initial="true">Grado <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  data-hide="phone"class="footable-sortable" data-sort-initial="true"># de documento <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th   data-hide="phone" class="footable-sortable" data-sort-initial="true">Edad <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th   data-hide="phone,tablet" class="footable-sortable" data-sort-initial="true">Correo <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  data-hide="phone,tablet"  class="footable-sortable" data-sort-initial="true">Teléfono <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  data-hide="phone,tablet"  class="footable-sortable" data-sort-initial="true">Celular <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  data-hide="phone,tablet"  class="footable-sortable" data-sort-initial="true">Dirección <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                  {% for estudiante in  listadoEstudiantes %}
+                                   <tr>
+                                      <td class="btntable"><button id="add-{{ estudiante.id }}" data-ide="{{estudiante.id}}" data-i="{{estudiante.id}};{{numEvento}};{{idProyectLogged}}" class="btnlist"></button></td>  
+                                      <td class="tNombre">{{ [estudiante.primerNombre, estudiante.segundoNombre, estudiante.primerApellido, estudiante.segundoApellido]|join(' ') }}</td>
+                                      <td  class="tGrado">{{ estudiante.grado }}°</td>
+                                      <td  class="tDoc">{{ estudiante.documento }}</td>
+                                      {% set difference = date(estudiante.fechaNace).diff(date()).days / 365 %}
+                                      <td  class="tEdad">{{ difference|round(0,'floor') }}</td>
+                                      <td>{{ estudiante.correo }}</td>
+                                      <td>{{ estudiante.tel }}</td>
+                                      <td>{{ estudiante.cel }}</td>
+                                      <td>{{ estudiante.direccion }}</td>
+                                    </tr>
+                                  {% endfor %}
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                        <td colspan="9">
+                                            <div class="pagination pagination-centered hide-if-no-paging"></div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                                </table><!--table-->
+                            </div><!--panel-body-->
+                        </div><!--panel-success-->
+                    </div><!--col-lg-1-->
+                </div>
+                <!-- /.row -->
+                <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header header-1">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 class="modal-title">Asistencia del taller</h2>
+                        </div>
+                        <div class="modal-body">
+                          <h3 class="modal-text">Confirmar la asistencia de <span id="conteoConfirmacion"></span> estudiantes al taller {{ numEvento}}</h3><br/>
+                          <table  class="footable1" id="table2" >
+                            <thead>
+                                    <tr>                                              
+                                      <th  class="footable-sortable" data-sort-initial="true">Nombre <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  class="footable-sortable" data-sort-initial="true">Grado <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  class="footable-sortable" data-sort-initial="true"># de documento <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th  class="footable-sortable" data-sort-initial="true">Edad <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                    </tr>
+                                  </thead>
+                            <tbody class="tbody-final">
+                            
+                            </tbody>
+                            <tfoot>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class="pagination pagination-centered hide-if-no-paging"></div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                          </table>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Regresar</button>
+                          <button type="button" class="btn btn-default" onclick="enviarAsistencia();">Enviar asistencia</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <input type="hidden" id="idProyecto" name="idProyecto" value="{{ idProyecto }}">
+        <input type="hidden" id="numEvento" name="numEvento" value="{{ numEvento }}">
+        <!-- /#page-wrapper -->
+{% endblock %}

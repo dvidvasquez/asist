@@ -1,0 +1,110 @@
+{% extends "masterpage.html" %}
+{% block content %}   
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">                            
+                                Buscador de sedes educativas
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <a href="#" data-toggle="modal" data-target="#myModal" class="hide"></a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-info-circle"></i>&nbsp;Busca la sede en la que se tomará la asistencia
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-10 col-lg-push-1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">
+                                    <i class="glyphicon glyphicon-education"></i>
+                                    Sedes educativas registradas    
+                                </h1>
+                            </div><!--panle-head-->
+                            <div class="panel-body">
+                                <p><i class="glyphicon glyphicon-search"></i> <input id="filter" type="text"></p>
+                                <table class="footable" data-filter="#filter" data-filter-text-only="true">
+                                  <thead>
+                                    <tr>
+                                      <th data-sort-ignore="true"><i class="glyphicon glyphicon-check"><i/></th>                                              
+                                      <th class="footable-sortable" data-sort-initial="true">Sede educativa<span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th data-hide="phone,tablet" class="footable-sortable" data-sort-initial="true">Cons Sede <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th class="footable-sortable" data-sort-initial="true">Institución educativa <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th data-hide="phone,tablet" class="footable-sortable" data-sort-initial="true">Codigo DANE <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th data-hide="phone" class="footable-sortable" data-sort-initial="true">Comuna <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                      <th data-hide="phone,tablet" class="footable-sortable" data-sort-initial="true">Dirección <span class="glyphicon glyphicon-chevron-down"></span></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>                                  
+                                  {% for in listaSedes %}
+                                     <tr>                                   
+                                      <td><button class="glyphicon glyphicon-ok aSelIcon" onclick="modalSede('{{ sede.nomSede|capitalize }}',{{sede.idSede}})"></button></td>  
+                                      <td>{{ sede.nomSede }}</td>
+                                      <td>{{ sede.codSede }}</td>
+                                      <td>{{ sede.nomIe }}</td>
+                                      <td>{{ sede.codIe }}</td>
+                                      <td>{{ sede.comunaSede }}</td>
+                                      <td>{{ sede.dirSede }}</td>
+                                    </tr>
+                                  {% endfor %}
+                                  </tbody>
+                                  <tfoot>
+                                    <tr>
+                                        <td colspan="8">
+                                            <div class="pagination pagination-centered hide-if-no-paging"></div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                                </table><!--table-->
+                            </div><!--panel-body-->
+                        </div><!--panel-success-->
+                    </div><!--col-lg-1-->
+                </div>
+                <!-- /.row -->
+                <!-- Modal -->
+                 <div class="modal fade" id="myModal" role="dialog" >
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 class="modal-title"></h2>
+                        </div>
+                        <form id="frmSelectSede" action="{{ path.sitio }}asistencia" method="post" >
+                        <div class="modal-body">
+                          <h3 class="modal-text"></h3><br/>  
+                            <input type="hidden" name="asisteSede" id="asisteSede">
+                            <input type="hidden" name="asisteSedeId" id="asisteSedeId">
+                            <input type="hidden" name="asisteProyecto" id="asisteProyecto" value="{{ idProyectLogged }}">                      
+                            <select name="asisteEvento" class="selectpicker selectcenter">
+                                <option value="**">Seleccione</option>
+                                {% for i in 1..eventsLogged %}
+                                 <option value="{{ i }}">Taller {{ i }}</option>
+                                {% endfor %}
+                            </select>                         
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Regresar</button>
+                          <input type="submit" class="btn btn-default"  value="Aceptar">
+                        </div>
+                         </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+{% endblock %}

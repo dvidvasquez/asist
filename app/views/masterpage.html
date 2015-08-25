@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include 'masterIncludes/metas.html' ignore missing %}
+<title>{{ title }}</title>		
+		<link rel="icon" type="image/ico" href="{{ path.absoluta }}img/favicon.ico">
+		{% include 'masterIncludes/stylesheets.html' ignore missing %}
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html"><img src="{{ path.sitio }}img/logo.png" /></a>
+</div>
+<!-- Top Menu Items -->
+<ul class="nav navbar-right top-nav">
+{% if actualPage == 'asistencia' %}
+<li>
+    <a class="asistenciasBoton" onclick="asistencias();"><i class="glyphicon glyphicon-ok-sign"> </i><span class="conteo animated">0</span></a>
+</li>
+{% endif %}
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{ nombreLogged }} <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="{{ path.sitio }}usuario/yo" style="color:#333 !important;"><i class="glyphicon glyphicon-cog"></i> Configuración</a>
+</li>
+<li>
+<a href="{{ path.sitio }}home/logout" style="color:#333 !important;"><i class="fa fa-fw fa-power-off"></i> Cerrar sesión</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+<div class="collapse navbar-collapse navbar-ex1-collapse barback">
+<ul class="nav navbar-nav side-nav barback">
+<li class="{% if actualPage == 'busqueda' %}active{% endif %}">
+<a href="{{ path.sitio }}busqueda" class="misgrupos"><i class="fa fa-search"></i>&nbsp;&nbsp;&nbsp;Buscar asistentes</a>
+</li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+{% block content %}
+
+{% endblock %}
+  </div>
+{% include 'masterIncludes/javascript.html' ignore missing %}
+</body>
+
+</html>

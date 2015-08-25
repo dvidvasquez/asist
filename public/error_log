@@ -1,0 +1,763 @@
+[05-May-2015 15:46:52 America/Chicago] PHP Warning:  require_once(../app/controllers/.php): failed to open stream: No such file or directory in /home3/galileo/public_html/galileo/app/core/App.php on line 23
+[05-May-2015 15:46:52 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/.php' (include_path='.:/opt/php55/lib/php') in /home3/galileo/public_html/galileo/app/core/App.php on line 23
+[05-May-2015 17:29:30 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../views')
+#2 /home3/galileo/public_html/galileo/app/init.php(7): Twig_Loader_Filesystem->__construct('../views')
+#3 /home3/galileo/public_html/galileo/public/index.php(3): require_once('/home3/galileo/...')
+#4 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:30:14 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/init.php(7): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/public/index.php(3): require_once('/home3/galileo/...')
+#4 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:30:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "/views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('/views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('/views')
+#2 /home3/galileo/public_html/galileo/app/init.php(7): Twig_Loader_Filesystem->__construct('/views')
+#3 /home3/galileo/public_html/galileo/public/index.php(3): require_once('/home3/galileo/...')
+#4 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:32:07 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 13
+[05-May-2015 17:32:52 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../../views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../../views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../../views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(13): Twig_Loader_Filesystem->__construct('../../views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('peterson', Array)
+#4 [internal function]: Home->index('peterson')
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:33:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(13): Twig_Loader_Filesystem->__construct('../views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('peterson', Array)
+#4 [internal function]: Home->index('peterson')
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:34:10 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(13): Twig_Loader_Filesystem->__construct('../views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('peterson', Array)
+#4 [internal function]: Home->index('peterson')
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:35:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(13): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('peterson', Array)
+#4 [internal function]: Home->index('peterson')
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:43:18 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 15
+[05-May-2015 17:46:25 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 15
+[05-May-2015 17:46:26 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 15
+[05-May-2015 17:46:47 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 15
+[05-May-2015 17:48:57 America/Chicago] PHP Fatal error:  Class 'Template' not found in /home3/galileo/public_html/galileo/app/core/Controller.php on line 4
+[05-May-2015 17:51:55 America/Chicago] PHP Warning:  require_once(core/Template.php): failed to open stream: No such file or directory in /home3/galileo/public_html/galileo/app/init.php on line 5
+[05-May-2015 17:51:55 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'core/Template.php' (include_path='.:/opt/php55/lib/php') in /home3/galileo/public_html/galileo/app/init.php on line 5
+[05-May-2015 17:52:14 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(15): Twig_Loader_Filesystem->__construct('../views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('init.php', Array)
+#4 [internal function]: Home->index('init.php')
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:52:27 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../views" directory does not exist.' in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../views', '__main__')
+#1 /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(15): Twig_Loader_Filesystem->__construct('../views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/galileo/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:52:58 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(15): Twig_Loader_Filesystem->__construct('../views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:53:09 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "../../views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('../../views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('../../views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(15): Twig_Loader_Filesystem->__construct('../../views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:53:21 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(15): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 17:55:04 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/galileo/public_html/galileo/app/controllers/home.php on line 7
+[05-May-2015 17:55:06 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('views', Array)
+#4 [internal function]: Home->index('views')
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 18:58:35 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 18:58:36 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 20:09:23 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 20:10:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 20:36:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 20:49:20 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 20:54:55 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 21:02:28 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[05-May-2015 21:08:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 01:56:19 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 04:17:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 04:40:24 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 05:28:23 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 05:34:16 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 05:40:32 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 05:57:04 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 06:28:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 06:42:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 06:47:57 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 06:53:19 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:01:05 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:11:56 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:17:14 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:22:29 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:28:20 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:38:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:43:52 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 07:54:03 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 08:00:09 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 08:10:53 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 08:20:27 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 08:25:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 08:39:42 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 08:39:48 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 08:40:17 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 09:06:26 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 09:41:04 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 09:41:15 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 14:22:57 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('views', Array)
+#4 [internal function]: Home->index('views')
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 14:23:09 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(16): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 14:26:35 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home3/galileo/public_html/galileo/app/core/Controller.php on line 13
+[06-May-2015 14:27:47 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home3/galileo/public_html/galileo/app/core/Controller.php on line 15
+[06-May-2015 14:34:23 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'The "views" directory does not exist.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:93
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(75): Twig_Loader_Filesystem->addPath('views', '__main__')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(33): Twig_Loader_Filesystem->setPaths('views')
+#2 /home3/galileo/public_html/galileo/app/core/Controller.php(15): Twig_Loader_Filesystem->__construct('views')
+#3 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#4 [internal function]: Home->index()
+#5 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_func_array(Array, Array)
+#6 /home3/galileo/public_html/galileo/public/index.php(4): App->__construct()
+#7 {main}
+  thrown in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 93
+[06-May-2015 14:37:40 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 19
+[06-May-2015 14:38:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template ".html" (looked into: ../app/views).' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:195
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(138): Twig_Loader_Filesystem->findTemplate('.html')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(266): Twig_Loader_Filesystem->getCacheKey('.html')
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(324): Twig_Environment->getTemplateClass('.html', NULL)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(293): Twig_Environment->loadTemplate('.html')
+#4 /home3/galileo/public_html/galileo/app/core/Controller.php(19): Twig_Environment->render('.html', Array)
+#5 /home3/galileo/public_html/galileo/app/controllers/home.php(13): Controller->view('', Array)
+#6 [internal function]: Home->index()
+#7 /home3/galileo/public_html/galileo/app/core/App.php(37): call_user_fun in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 195
+[06-May-2015 15:02:25 America/Chicago] PHP Catchable fatal error:  Object of class Home could not be converted to string in /home3/galileo/public_html/galileo/app/core/App.php on line 34
+[06-May-2015 15:03:07 America/Chicago] PHP Fatal error:  Class 'App' not found in /home3/galileo/public_html/galileo/public/index.php on line 4
+[06-May-2015 15:11:04 America/Chicago] PHP Warning:  Creating default object from empty value in /home3/galileo/public_html/galileo/app/controllers/home.php on line 11
+[06-May-2015 15:12:16 America/Chicago] PHP Fatal error:  Class 'App' not found in /home3/galileo/public_html/galileo/public/index.php on line 4
+[06-May-2015 15:27:17 America/Chicago] PHP Fatal error:  Class 'Controller' not found in /home3/galileo/public_html/galileo/app/controllers/home.php on line 7
+[06-May-2015 15:27:34 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'A template that extends another one cannot have a body in "home.index.html" at line 2.' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php:370
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(383): Twig_Parser->filterBodyNodes(Object(Twig_Node_Text))
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(98): Twig_Parser->filterBodyNodes(Object(Twig_Node))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(335): Twig_Environment->compileSource('{% extends "mas...', 'home.index.html')
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(293): Twig_Environment->loadTemplate('home.index.html')
+#6 /home3/galileo/publi in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php on line 370
+[06-May-2015 15:29:42 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:37:16 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home3/galileo/public_html/galileo/app/controllers/home.php on line 15
+[06-May-2015 15:37:27 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home3/galileo/public_html/galileo/app/controllers/home.php on line 15
+[06-May-2015 15:37:30 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home3/galileo/public_html/galileo/app/controllers/home.php on line 19
+[06-May-2015 15:37:45 America/Chicago] PHP Fatal error:  Class 'home' not found in /home3/galileo/public_html/galileo/app/core/App.php on line 27
+[06-May-2015 15:37:49 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:39:10 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:41:50 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:41:54 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:41:58 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:42:01 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:42:02 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:43:36 America/Chicago] PHP Parse error:  syntax error, unexpected ''home.index.html'' (T_CONSTANT_ENCAPSED_STRING) in /home3/galileo/public_html/galileo/app/core/Controller.php on line 19
+[06-May-2015 15:44:11 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "home.index.html" at line 1' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:56:36 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "masterpage.html" at line 7' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:57:12 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "masterpage.html" at line 7' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:57:16 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "punctuation" of value "(" ("name" expected) in "masterpage.html" at line 7' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(36): Twig_TokenStream->expect(5)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(45): Twig_Parser->subparse(Array, true)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#6 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_E in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 15:57:43 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Syntax' with message 'Unexpected token "end of template" of value "" ("end of statement block" expected) in "masterpage.html" at line 7' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php:88
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenParser/Block.php(58): Twig_TokenStream->expect(3)
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(187): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Parser.php(95): Twig_Parser->subparse(NULL, false)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(543): Twig_Parser->parse(Object(Twig_TokenStream))
+#4 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(595): Twig_Environment->parse(Object(Twig_TokenStream))
+#5 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(335): Twig_Environment->compileSource('<!DOCTYPE html>...', 'masterpage.html')
+#6 /home3/galileo/public_ in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/TokenStream.php on line 88
+[06-May-2015 16:06:40 America/Chicago] PHP Fatal error:  Uncaught exception 'Twig_Error_Loader' with message 'Unable to find template "home.html" (looked into: ../app/views).' in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:195
+Stack trace:
+#0 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(138): Twig_Loader_Filesystem->findTemplate('home.html')
+#1 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(266): Twig_Loader_Filesystem->getCacheKey('home.html')
+#2 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(324): Twig_Environment->getTemplateClass('home.html', NULL)
+#3 /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Environment.php(293): Twig_Environment->loadTemplate('home.html')
+#4 /home3/galileo/public_html/galileo/app/core/Controller.php(19): Twig_Environment->render('home.html', Array)
+#5 /home3/galileo/public_html/galileo/app/controllers/home.php(18): Controller->view('home.index', Array)
+#6 [internal function]: Home->index()
+#7 /home3/galileo/public_html/galileo/a in /home3/galileo/public_html/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 195
+[06-May-2015 16:34:27 America/Chicago] PHP Parse error:  syntax error, unexpected '"users"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home3/galileo/public_html/galileo/app/core/Controller.php on line 21
+[06-May-2015 16:42:34 America/Chicago] PHP Fatal error:  Call to undefined method Templating::render() in /home3/galileo/public_html/galileo/app/core/Controller.php on line 22
+[06-May-2015 16:44:11 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 22
+[06-May-2015 16:45:03 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 22
+[06-May-2015 16:45:05 America/Chicago] PHP Fatal error:  Call to a member function render() on a non-object in /home3/galileo/public_html/galileo/app/core/Controller.php on line 22
+[06-May-2015 17:07:48 America/Chicago] PHP Warning:  require_once(core/Twig.php): failed to open stream: No such file or directory in /home3/galileo/public_html/galileo/app/init.php on line 4
+[06-May-2015 17:07:48 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'core/Twig.php' (include_path='.:/opt/php55/lib/php') in /home3/galileo/public_html/galileo/app/init.php on line 4
+[06-May-2015 17:08:41 America/Chicago] PHP Fatal error:  Class 'Templating' not found in /home3/galileo/public_html/galileo/app/core/Controller.php on line 4

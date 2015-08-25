@@ -1,0 +1,21 @@
+{
+    "mysql": [
+        {
+            "host": "localhost",
+            "username": "root",
+            "password": "",
+            "db": "tiendadb"
+        }
+    ],
+    "remember": [
+        {
+            "cookie_name": "hash",
+            "cookie_expiry": 604800
+        }
+    ],
+    "session": [
+        {
+            "session_name": "user"
+        }
+    ]
+}

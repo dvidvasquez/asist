@@ -1,0 +1,181 @@
+{% extends "masterpage.html" %}
+{% block content %}   
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Mis grupos
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="alert alert-info alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            <i class="fa fa-info-circle"></i>&nbsp;Selecciona un grupo
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <a href="#" data-toggle="modal" data-target="#myModal" class="hide"></a>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                            <a href="#" class="openModal" onclick="modal('1');">
+                                    <div class="col-xs-3">
+                                        <div class="huge">Grupo</div>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">1</div>
+                                        <div>50%</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <progress value="50"  max="100" ></progress>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                            <a href="#" class="openModal" onclick="modal('2');">
+                                    <div class="col-xs-3">
+                                        <div class="huge">Grupo</div>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">2</div>
+                                        <div>70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <progress value="70"  max="100" ></progress>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                            <a href="#" class="openModal" onclick="modal('3');">        
+                                    <div class="col-xs-3">
+                                        <div class="huge">Grupo</div>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">3</div>
+                                        <div>10%</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <progress value="10"  max="100" ></progress>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                            <a href="#" class="openModal" onclick="modal('4');">                                    
+                                    <div class="col-xs-3">
+                                        <div class="huge">Grupo</div>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">4</div>
+                                        <div>90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <progress value="90"  max="100" ></progress>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-morado">
+                            <div class="panel-heading">
+                                <div class="row">
+                            <a href="#" class="openModal" onclick="modal('5');">
+                                    <div class="col-xs-3">
+                                        <div class="huge">Grupo</div>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">5</div>
+                                        <div>35%</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <progress value="35"  max="100" ></progress>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!-- Modal -->
+                  <div class="modal fade" id="myModal" role="dialog" grupo="0">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 class="modal-title"></h2>
+                        </div>
+                        <form action="{{ path.sitio }}asistencia" method="post" >
+                        <div class="modal-body">
+                          <h3 class="modal-text"></h3><br/>  
+                            <input type="hidden" grupo="" name="asisteGrupo" id="asisteGrupo">                      
+                            <select name="asisteEvento" class="selectpicker selectcenter">
+                                <option value="x">Seleccione</option>
+                                <option value="1">Taller 1</option>
+                                <option value="2">Taller 2</option>
+                                <option value="3">Taller 3</option>
+                                <option value="4">Taller 4</option>
+                                <option value="5">Taller 5</option>
+                                <option value="6">Taller 6</option>
+                                <option value="7">Taller 7</option>
+                                <option value="8">Taller 8</option>
+                                <option value="9">Taller 9</option>
+                                <option value="10">Taller 10</option>
+                                <option value="11">Taller 11</option>
+                                <option value="12">Taller 12</option>
+                                <option value="13">Taller 13</option>
+                                <option value="14">Taller 14</option>
+                                <option value="15">Taller 15</option>
+                                <option value="16">Taller 16</option>
+                                <option value="17">Taller 17</option>
+                                <option value="18">Taller 18</option>
+                                <option value="19">Taller 19</option>
+                                <option value="20">Taller 20</option>
+                                <option value="21">Taller 21</option>
+                                <option value="22">Taller 22</option>
+                                <option value="23">Taller 23</option>
+                                <option value="24">Taller 24</option>
+                                <option value="25">Taller 25</option>
+                                <option value="26">Taller 26</option>
+                                <option value="27">Taller 27</option>
+                            </select>                         
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Regresar</button>
+                          <input type="submit" class="btn btn-default"  value="Aceptar">
+                        </div>
+                         </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+{% endblock %}
+  
