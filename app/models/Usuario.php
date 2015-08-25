@@ -16,12 +16,13 @@ class Usuario
 		$user = $this->_db->get("usuarios", array('documento','=',$username));
 
 		if ($user->count()) {
+
 			$this->_data = $user->first();
 			$proyecto = $this->_db->query("SELECT * FROM proyectos WHERE id = (SELECT id FROM proyectoactual WHERE idUsuario = ? LIMIT 1)", array($this->_data->id), "proyecto")->first();
-			
+
 			if ($this->checkPass($password))
 			{				
-				// Log::in($this->_data);				
+				// Log::in($this->_data);			
 				return User::login($this->_data,$proyecto);
 				//Session::put(Config::get("session/session_name"), $this->_data->id);
 				//return Session::exists(Config::get("session/session_name"));
@@ -38,7 +39,7 @@ class Usuario
 
 	private function checkPass($password)
 	{
-		if ($this->_data->pass === Hash::make($password, $this->_data->salt))
+		if ($this->_data->pass === Hash::make($password, $this->_data->salt))			
 			return true;
 		return false;
 	}

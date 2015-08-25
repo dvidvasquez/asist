@@ -43,7 +43,7 @@ class Home extends Controller
 				{
 				//validacion de token de seguridad
 					if($this->model('Usuario')->check($doc,$pass))
-					{
+					{						
 						header("Location: ".$this->model('Path')->get()->sitio."busqueda");
 						exit();
 						// $this->index();
