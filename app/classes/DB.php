@@ -68,6 +68,21 @@ class DB {
 				}
 	}
 
+	public function multiInsert($table, $cols = array())
+	{
+			end($cols);
+			$last = key($cols);
+			$positions = "";
+				foreach ($cols as $key => $col) {
+					$positions = $key==$last? $positions." ? " : $positions." ?, ";
+				}	
+			$columns = implode(",",array_keys($cols));
+				$sql = "INSERT INTO {$table} ({$columns}) VALUES(".$positions.")";
+				if (!$this->query($sql, array_values($cols), $table)->error()) {
+					return $this;
+				}
+	}
+
 	public function update($table, $id, $fields)
 	{
 			

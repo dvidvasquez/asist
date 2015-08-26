@@ -1,8 +1,10 @@
 var conteo = 0;
 var estudiantes = [];
+var _evento ="";
 var posicion = 0;
 
 $(document).ready(function() {
+	_evento= $("#numEvento").val();
 	$('.footable').footable();	
 	 $(".footable1").footable();
 	$('table').trigger('footable_clear_filter');$('.filter-api').click(function (e) {    e.preventDefault();var footableFilter = $('table').data('footable-filter');alert('about to filter table by "tech"');footableFilter.filter('tech');if (confirm('clear filter now?')) {footableFilter.clearFilter();}});	
@@ -17,7 +19,7 @@ $(document).ready(function() {
 		var grado = tr.find(".tGrado").html();
 		var documento = tr.find(".tDoc").html();		
 		var edad = tr.find(".tEdad").html();
-		var datos = $(this).data("i");
+		//var datos = $(this).data("i");
 		var idDato = $(this).data("ide");
 
 		var tratt = tr.attr('selected');
@@ -27,7 +29,7 @@ $(document).ready(function() {
 			$(this).addClass('glyphicon glyphicon-remove');
 			tr.addClass('selected');
 			tr.attr('selected', '1');
-			ftAddRow(".footable1",[nombre,grado,documento,edad],datos,idDato);
+			ftAddRow(".footable1",[nombre,grado,documento,edad],idDato);
 			conteo++;
 			$('.conteo').html(conteo);
 			$('.conteo').hide();
@@ -50,13 +52,13 @@ $(document).ready(function() {
 });
 
 
-function ftAddRow(ti, fila,datos,id){	
+function ftAddRow(ti, fila,id){	
 	var tds = "";
 	$.each(fila, function (j, col){
             	tds = tds+"<td>"+col+"</td>";
                 });
 	var footable = $(ti).data('footable');
-    footable.appendRow("<tr class='confirmaAsiste rConfirma-"+id+"' data-in='"+datos+"' >"+tds+"</td>");
+    footable.appendRow("<tr class='confirmaAsiste rConfirma-"+id+"' data-in='"+id+"' >"+tds+"</td>");
 }
 
 function ftRemoveRow(ti, id){	
@@ -72,12 +74,23 @@ function asistencias(){
 
 function enviarAsistencia(){
 	//console.log(html2json(".footable1"));
-	var jsonConfirm = [];
+	var jsonObject = [];
 	$("#table2 .confirmaAsiste").each(function(i,v){
-		var parts = $(v).data("in").split(";");
-		 jsonConfirm.push({idEstudiante: parts[0],numEvento: parts[1],idProyecto: parts[2]});
+		var idEst = $(v).data("in");
+		 jsonObject.push({idEstudiante: idEst});
 	});
-	console.log(JSON.stringify(jsonConfirm));
+
+	var token = $("#tokenAsitencia").val();
+    var pathSitio = $("#pathSitio").val();
+    var jsonConfirm = JSON.stringify(jsonObject);
+	$('<form>', {
+    "id": "getInvoiceImage",
+    "html": "<input type='hidden' id='cratedFormInput_1' name='token' value='" + token + "'' /><input type='hidden' id='cratedFormInput_2' name='jsonConfirm' value='" + jsonConfirm + "' /><input type='hidden' id='cratedFormInput_3' name='numEvento' value='" + _evento + "' />",
+    "action": pathSitio + 'asistencia/confirmar',
+    "method": "post"
+}).appendTo(document.body).submit();
+	//console.log(JSON.stringify(jsonConfirm));
+	//confirmarAsistencia(JSON.stringify(jsonConfirm));
 }
 
 function html2json(laTabla) {
@@ -95,3 +108,34 @@ function html2json(laTabla) {
 
    return json;
 }
+
+
+$(".cerrarTelon").click(function(){
+   $("#telon").addClass("hide"); 
+   $("#successConfirma, #errorConfirma, #sending").removeClass("animated bounce");
+  $("#successConfirma, #errorConfirma, #sending").addClass("hide");
+});
+
+function cs(){
+    $("#successConfirma, #errorConfirma, #sending").removeClass("animated bounce");
+    $("#successConfirma, #errorConfirma, #sending").addClass("hide");
+}
+
+
+function mt(which){
+      $("#telon").removeClass("hide");
+      switch (which) {
+          case "o":  
+          cs();
+          $("#successConfirma").removeClass("hide").addClass("animated bounce");
+           break;
+          case "e":  
+          cs();
+          $("#errorConfirma").removeClass("hide").addClass("animated bounce");
+           break;
+          case "s": 
+          cs(); 
+          $("#sending").removeClass("hide");
+           break;
+                  }  
+};

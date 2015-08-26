@@ -6,12 +6,13 @@ class Asistencia extends Controller
 {	
 	public function __construct()
 	{
-		$this->checkPost(array("asisteEvento","asisteSede","asisteSedeId",
-"asisteProyecto"));
+		
 	}
 
 	public function index($name = "")
-	{	
+	{		
+		$this->checkPost(array("asisteEvento","asisteSede","asisteSedeId",
+"asisteProyecto"));
 
 		$numEvento = $_POST["asisteEvento"];
 		$sedeEdu = $_POST["asisteSede"];
@@ -32,6 +33,25 @@ class Asistencia extends Controller
 			);
 
 		$this->view('asistencia.html',$params);
+	}
+
+	public function confirmar($name = "")
+	{	
+		$this->checkPost(array("token","jsonConfirm","numEvento"));
+		$jsonConfirm = json_decode($_POST["jsonConfirm"]);
+		$numEvento = $_POST["numEvento"];
+		$token = $_POST["token"];		
+		if(Token::check($token))
+		{
+		#validacion de token de seguridad
+			// if($this->model('Asistencia')->confirmar($jsonConfirm,$numEvento))
+			// {
+			// 	header("Location: ".$this->model('Path')->get()->sitio."busqueda");
+			// 	exit();
+			// 	// $this->index();
+			// }	
+		#validacion de token de seguridad
+		}	
 	}
 
 

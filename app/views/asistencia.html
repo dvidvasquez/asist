@@ -1,5 +1,16 @@
 {% extends "masterpage.html" %}
-{% block content %}   
+{% block content %}  
+<div class="hide" id="telon">
+   <div class="hide cerrarTelon" id="sending">
+      <div class="loader">Enviando...</div>
+   </div> 
+   <div class="hide cerrarTelon" id="errorConfirma">
+     <div class="glyphicon glyphicon-remove"></div>
+   </div>  
+    <div class="hide cerrarTelon" id="successConfirma">
+     <div class="glyphicon glyphicon-ok"></div>
+   </div>  
+</div>
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -51,7 +62,7 @@
                                   <tbody>
                                   {% for estudiante in  listadoEstudiantes %}
                                    <tr>
-                                      <td class="btntable"><button id="add-{{ estudiante.id }}" data-ide="{{estudiante.id}}" data-i="{{estudiante.id}};{{numEvento}};{{idProyectLogged}}" class="btnlist"></button></td>  
+                                      <td class="btntable"><button id="add-{{ estudiante.id }}" data-ide="{{estudiante.id}}"  class="btnlist"></button></td>  
                                       <td class="tNombre">{{ [estudiante.primerNombre, estudiante.segundoNombre, estudiante.primerApellido, estudiante.segundoApellido]|join(' ') }}</td>
                                       <td  class="tGrado">{{ estudiante.grado }}°</td>
                                       <td  class="tDoc">{{ estudiante.documento }}</td>
@@ -110,7 +121,10 @@
                           </table>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Regresar</button>
+                          <button type="button" class="btn btn-default" id="cerrarAsistenciaModal" data-dismiss="modal">Regresar</button>
+                          <input type="hidden" id="tokenAsitencia" value="{{ token }}">
+                          <input type="hidden" id="pathSitio" value="{{ path.sitio }}">
+                          <input type="hidden" id="numEvento" name="numEvento" value="{{ numEvento }}">
                           <button type="button" class="btn btn-default" onclick="enviarAsistencia();">Enviar asistencia</button>
                         </div>
                       </div>
@@ -119,8 +133,6 @@
                   </div>
             </div>
             <!-- /.container-fluid -->
-        </div>
-        <input type="hidden" id="idProyecto" name="idProyecto" value="{{ idProyecto }}">
-        <input type="hidden" id="numEvento" name="numEvento" value="{{ numEvento }}">
+        </div>        
         <!-- /#page-wrapper -->
 {% endblock %}
