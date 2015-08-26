@@ -36,12 +36,17 @@ class Controller extends Twig
 
 		if (!Session::exists(Config::get("session/session_name"))) {
 			if ($view != "login.html") {
-				$logInParams = array(
-				"title"=>"Bienvenidos - CTA",
-				"actualPage"=>"login",
-				"err"=> "err"
-				);
-				echo Twig::getInstance()->render("login.html", array_merge($logInParams, $masterParams));
+				if($view != "recuperar.html")
+				{
+					$logInParams = array(
+								"title"=>"Bienvenidos - CTA",
+								"actualPage"=>"login",
+								"err"=> "err"
+								);
+								echo Twig::getInstance()->render("login.html", array_merge($logInParams, $masterParams));
+				}else{
+					echo Twig::getInstance()->render($view, array_merge($data, $masterParams));
+				}
 			}
 			else
 			{
@@ -50,7 +55,7 @@ class Controller extends Twig
 			
 		}
 		else {			
-			if ($view != "login.html")
+			if ($view != "login.html" )
 			{
 				echo Twig::getInstance()->render($view, array_merge($data, array_merge($masterParams, User::info())));
 			}

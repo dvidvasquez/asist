@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>{{ title|default('CTA') }}</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+	<link rel="stylesheet" href="{{ path.sitio }}css/style.css">
+	<link rel="stylesheet" href="{{ path.sitio }}css/animate.css">
+	<link rel="stylesheet" href="{{ path.sitio }}css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ path.sitio }}css/style.css">
+	<script src="{{ path.sitio }}js/jquery.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<div id="telon" class="hide">
+  <div id="sending" class="hide loader cerrarTelon">
+  </div>
+   <div id="errorConfirma" class="hide glyphicon glyphicon-remove cerrarTelon">    
+  </div>
+   <div id="successConfirma" class="hide glyphicon glyphicon-ok cerrarTelon">    
+  </div>
+  <div id="ajmensaje" class="hide"></div>
+</div>
+
+	<div id="login">
+		<h2><br/><br/>Bienvenido<span class="logo"><img src="{{ path.sitio }}img/logo.png"/></span></h2>
+
+		<form id="frmRecuperar" action="{{ path.sitio }}home/recupe">
+			<fieldset>	
+			<p><label for="usuario">{{ sesion }}</label></p>
+				<p><label for="usuario">Identificación</label></p>
+				<p><input type="text" name="user" id="usuario" required autofocus></p> <!-- JS -->
+				<input type="hidden" name="token" id="token" value="{{ token }}">
+				<p><input type="submit" value="Ingresar" ></p>
+			</fieldset>
+		</form>
+
+	</div> <!-- end login -->
+<script src="{{ path.sitio }}js/script.js"></script>
+<script src="{{ path.sitio }}js/ajax.js"></script>
+{% if err %}
+<script>
+	errLogIn();
+</script>
+{% endif %}
+</body>	
+</html>
+

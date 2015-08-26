@@ -20,6 +20,16 @@ class Home extends Controller
 		$this->view('login.html',$params);
 	}
 
+	public function recuperar($name = null)
+	{	
+		$params = array(
+			"title"=>"Recuperar contraseña  - CTA",
+			"actualPage"=>"recuperar"
+			);
+
+		$this->view('recuperar.html',$params);
+	}
+
 	public function logout($name = null)
 	{	
 		if($this->model('Usuario')->logout())
@@ -54,6 +64,17 @@ class Home extends Controller
 			//validacion de token de seguridad	
 		}	
 	$this->index("err");		
+	}
+
+	public function recupe($name = null)
+	{	
+		if (isset($_REQUEST["user"]))
+		{	
+			$doc = $_REQUEST["user"];	
+			echo $this->model('Recuperar')->check($doc) ? "ok": "err";
+			exit();
+					
+		}			
 	}
 
 }
