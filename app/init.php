@@ -4,10 +4,10 @@
 
 $GLOBALS['config'] = array(
 	'mysql' => array(
-		'host' =>  'localhost',
-		'username'=> 'root',
-		'password' => '',
-		'db' => 'asist'
+		'host' =>  'www.cieroccidente.edu.co',
+		'username'=> 'wwwcier_cta',
+		'password' => '6r=yA7ikDpe-',
+		'db' => 'wwwcier_cta'
 		),
 	'remember' => array(
 		'cookie_name' => 'hash',
