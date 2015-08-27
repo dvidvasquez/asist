@@ -68,24 +68,45 @@ class DB {
 				}
 	}
 
-	public function multiInsert($table, $cols = array())
+	public function multiInsert($table, $rows = array())
 	{
-			end($cols);
-			$last = key($cols);
-			$positions = "";
-				foreach ($cols as $key => $col) {
-					$positions = $key==$last? $positions." ? " : $positions." ?, ";
-				}	
-			$columns = implode(",",array_keys($cols));
-				$sql = "INSERT INTO {$table} ({$columns}) VALUES(".$positions.")";
-				if (!$this->query($sql, array_values($cols), $table)->error()) {
+			end($rows);
+			$lastRow = key($rows);
+			$queryValues = "";
+			$valuesArray = array();
+			foreach ($rows as $key => $row) {
+				end($row);
+				$positions ="";
+				$lastCol = key($row);
+					foreach ($row as $k => $col) {
+						$positions = $k==$lastCol? $positions." ? " : $positions." ?, ";
+						$valuesArray[]=$col;
+					}
+				$queryValues = $key==$lastRow? $queryValues." (".$positions.")" : $queryValues." (".$positions."),";
+			}	
+
+			$columns = implode(", ",array_keys($rows[0]));
+				$sql = "INSERT INTO {$table} ({$columns}) VALUES ".$queryValues;
+				if (!$this->query($sql, $valuesArray, $table)->error()) {
 					return $this;
 				}
 	}
 
-	public function update($table, $id, $fields)
+	public function update($table, $where = array(), $fields = array())
 	{
-			
+			end($fields);
+			$last = key($fields);
+			$positions = "";
+				foreach ($fields as $key => $col) {
+					$positions = $key==$last? $positions." ".$key." = ? " :$positions." ".$key." = ?, ";
+				}	
+			$columns = implode(",",array_keys($fields));
+				$whereId = $where['nombre'];
+				$valWhereId = $where['valor'];
+				$sql = "UPDATE {$table} SET {$positions} WHERE {$whereId} = '{$valWhereId}'";				
+				if (!$this->query($sql, array_values($fields), $table)->error()) {
+					return $this;
+				}
 	}
 
 	public function action($action, $table, $where = array())

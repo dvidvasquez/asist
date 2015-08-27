@@ -20,8 +20,8 @@ class Asisten
 				);
 			array_push($params, $newArray );
 		}
-			
-		return $_db->multiInsert("asistencias",$params)) ? true : false;
+
+		return $_db->multiInsert("asistencias",$params);
 
 	}
 }

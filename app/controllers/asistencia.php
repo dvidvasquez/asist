@@ -11,15 +11,14 @@ class Asistencia extends Controller
 
 	public function index($name = "")
 	{		
-		$this->checkPost(array("asisteEvento","asisteSede","asisteSedeId",
-"asisteProyecto"));
+		$this->checkPost(array("asisteEvento","asisteSede","asisteSedeId"));
 
 		$numEvento = $_POST["asisteEvento"];
 		$sedeEdu = $_POST["asisteSede"];
 		$sedeEduId = $_POST["asisteSedeId"];		
-		$idProyecto = $_POST["asisteProyecto"];
+		$idProyecto = Session::get(Config::get("session/proyect_id"));
 
-		$listadoEstudiantes = $this->model("Estudiante")->getBy_Sede($sedeEduId);
+		$listadoEstudiantes = $this->model("Estudiante")->getBy_SedePendiente($sedeEduId, $numEvento);
 
 		// var_dump($listadoEstudiantes);
 		// exit();
@@ -42,14 +41,14 @@ class Asistencia extends Controller
 		$numEvento = $_POST["numEvento"];
 		$token = $_POST["token"];		
 		if(Token::check($token))
-		{
+		{			
 		#validacion de token de seguridad
-			// if($this->model('Asistencia')->confirmar($jsonConfirm,$numEvento))
-			// {
-			// 	header("Location: ".$this->model('Path')->get()->sitio."busqueda");
-			// 	exit();
-			// 	// $this->index();
-			// }	
+			if($this->model('Asisten')->confirmar($jsonConfirm,$numEvento))
+			{
+				header("Location: ".$this->model('Path')->get()->sitio."busqueda");
+				exit();
+				// $this->index();
+			}	
 		#validacion de token de seguridad
 		}	
 	}

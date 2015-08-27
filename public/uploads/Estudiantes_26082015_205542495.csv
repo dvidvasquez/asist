@@ -1,0 +1,15 @@
+CONS_SEDE;NOMBRE_SEDE;COMUNA;TIPO_DOCUMENTO;NRO_DOCUMENTO;PRIMER_NOMBRE;SEGUNDO_NOMBRE;PRIMER_APELLIDO;SEGUNDO_APELLIDO;TELÉFONO;GRADO;"Taller 1";"Taller 2";"Taller 3";"Taller 4";"Taller 5";"Taller 6";"Taller 7";"Taller 8";"Taller 9";"Taller 10";"Taller 11";"Taller 12";"Taller 13";"Taller 14";"Taller 15";"Taller 16";"Taller 17";"Taller 18";"Taller 19";"Taller 20";"Taller 21";"Taller 22";"Taller 23";"Taller 24";"Taller 25";"Taller 26";"Taller 27"
+2;20500100138903;"EL PLACER";3;"Tarjeta de Identidad";00022602507;Dario;;Castro;Florencia;2304545;9;2015-08-26;2015-08-27;;;;;;;;;;;;;;;;;;;;;;;;;
+3;20500100138903;"EL PLACER";3;"Tarjeta de Identidad";00022602508;Jose;Andres;Cardona;Torres;2304545;9;;2015-08-27;;;;;;;;;;;;;;;;;;;;;;;;;
+4;20500100138903;"EL PLACER";3;"Tarjeta de Identidad";00022602509;Miguel;Alejandro;Ochoa;Ramos;2304545;9;2015-08-26;2015-08-27;;;;;;;;;;;;;;;;;;;;;;;;;
+5;20500100138903;"EL PLACER";3;"Tarjeta de Identidad";00022602510;Camila;;Piedraita;Cañas;2304545;9;2015-08-26;2015-08-27;;;;;;;;;;;;;;;;;;;;;;;;;
+6;20500100138904;"EL PLACER 2 LA REVELACION";2;"Tarjeta de Identidad";99011312345;Andrea;;Mantilla;Girlado;5808301;10;;;;;;2015-08-26;;;;;;;;;;;;;;;;;;;;;
+7;20500100138904;"EL PLACER 2 LA REVELACION";2;"Tarjeta de Identidad";99011312346;Astrid;Zuleima;Garcia;Aristizabal;5808301;10;;;;;;2015-08-26;;;;;;;;;;;;;;;;;;;;;
+8;20500100138904;"EL PLACER 2 LA REVELACION";2;"Tarjeta de Identidad";99011312347;Catalina;;Gonzales;Giraldo;5808301;10;;;;;;2015-08-26;;;;;;;;;;;;;;;;;;;;;
+9;20500100138904;"EL PLACER 2 LA REVELACION";2;"Tarjeta de Identidad";99011312348;Margarita;Maria;Goez;Arrieta;5808301;10;;;;;;2015-08-26;;;;;;;;;;;;;;;;;;;;;
+10;20500100138904;"EL PLACER 2 LA REVELACION";2;"Tarjeta de Identidad";99011312350;Paola;Andrea;Incapie;Ochoa;5808301;10;;;;;;;;;;;;;;;;;;;;;;;;;;;
+11;20500100138001;"PRUEBA SEDE";4;"Tarjeta de Identidad";03100254321;Guillermo;Leon;Rodas;Zuluaga;3214570;7;;2015-08-26;;;;;;;;;;;;;;;;;;;;;;;;;
+12;20500100138001;"PRUEBA SEDE";4;"Tarjeta de Identidad";03100254320;Juan;Sebastian;Moreno;Yepes;3214570;7;;2015-08-26;;;;;;;;;;;;;;;;;;;;;;;;;
+13;20500100138001;"PRUEBA SEDE";4;"Tarjeta de Identidad";03100254322;Andres;Felipe;Moreno;Betancur;3214570;7;;2015-08-26;;;;;;;;;;;;;;;;;;;;;;;;;
+14;20500100138001;"PRUEBA SEDE";4;"Tarjeta de Identidad";03100254319;Cristian;Felipe;Duque;Jimenes;3214570;7;;;;;;;;;;;;;;;;;;;;;;;;;;;
+15;20500100138001;"PRUEBA SEDE";4;"Tarjeta de Identidad";03100254313;David;;Cuellar;Yusunguaira;3214570;7;;2015-08-26;;;;;;;;;;;;;;;;;;;;;;;;;

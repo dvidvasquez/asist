@@ -1,0 +1,16 @@
+
+"SELECT 
+		si.consSede AS 'CONS_SEDE',
+		si.nombre AS 'NOMBRE_SEDE',
+		si.comuna AS 'COMUNA',
+		e.tipoDoc AS 'TIPO_DOCUMENTO',
+		e.documento AS 'NRO_DOCUMENTO',
+		e.primerNombre AS 'PRIMER_NOMBRE',
+		e.segundoNombre AS 'SEGUNDO_NOMBRE',
+		e.primerApellido 'PRIMER_APELLIDO',
+		e.segundoApellido AS 'SEGUNDO_NOMBRE',
+		e.tel AS 'TELÃFONO',
+		e.grado AS 'GRADO'
+		FROM estudiantes e INNER JOIN sedes_x_institucion si ON e.sedeEducativa = si.id;
+		SELECT DISTINCT  * FROM asistencias WHERE idProyecto = 1"
+Array;Array;Array;Array;Array;Array;Array;Array;Array;Array;Array;Array;Array;Array;Array

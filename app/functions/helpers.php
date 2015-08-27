@@ -21,7 +21,7 @@ function unWrapResult($array)
 	return $newValues;
 }
 
-function toArray($obj, $fechas = array())
+function toArray($obj, $setUtf = true)
 {
 	#$fechas(hoy, fecha, nombreResultado)
 		    if (is_object($obj)) $obj = (array)$obj;
@@ -29,8 +29,8 @@ function toArray($obj, $fechas = array())
 		        $new = array();
 		        foreach ($obj as $key => $val) {
 		        	if(is_string($val))
-		        	$val = utf8_encode($val);
-		            $new[$key] = toArray($val);
+		        	$val = $setUtf==true ? utf8_encode($val) : $val;
+		            $new[$key] = toArray($val, $setUtf);
 		        }
 		    } else {
 		        $new = $obj;
